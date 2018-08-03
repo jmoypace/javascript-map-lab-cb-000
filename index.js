@@ -25,3 +25,4 @@ const zebraStripes = [
 const sortedRobots = map(robots, function (robots) {
 
 });
+console.log(sortedRobots);
