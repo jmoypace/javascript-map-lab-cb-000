@@ -21,17 +21,9 @@ const zebraStripes = [
   { width: 0.59, color: null },
   { width: 7.31, color: null }
 ];
-function map(collection, callback) {
-  const result = [];
-
-  for (let i = 0; i < collection.length; i++) {
-    const element = collection[i];
-    result.push(callback(element));
-  }
-
-  return result;
-}
-const sortedRobots = map(robots, function (robots) {
-
+const sortedRobots = robots.map(robot => {
+  const isDecepticon = knownDecepticons.includes(robot.name);
+  return Object.assign({}, robot, {
+    alliance: isDecepticon ? 'decepticon' : 'autobot'
+  });
 });
-console.log(sortedRobots);
