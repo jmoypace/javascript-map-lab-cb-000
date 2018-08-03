@@ -24,4 +24,4 @@ const zebraStripes = [
 
 var sortedRobots=robots.reduce(array, callback){
 
-}
+});
