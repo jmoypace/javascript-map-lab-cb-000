@@ -27,3 +27,9 @@ const sortedRobots = robots.map(robot => {
     alliance: isDecepticon ? 'decepticon' : 'autobot'
   });
 });
+const coloredZebraStripes = zebraStripes.map((stripe, index) => {
+  const isEven = (index % 2) === 0;
+  return Object.assign({}, stripe, {
+    color: isEven ? 'black' : 'white'
+  });
+});
