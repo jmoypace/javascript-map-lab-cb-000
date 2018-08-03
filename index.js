@@ -21,5 +21,7 @@ const zebraStripes = [
   { width: 0.59, color: null },
   { width: 7.31, color: null }
 ];
-function map(collection, callback)
-var sortedRobots=robots.reduce(robots, callback)
+
+const sortedRobots = map(robots, function (robots) {
+
+});
