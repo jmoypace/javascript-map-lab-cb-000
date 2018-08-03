@@ -22,4 +22,4 @@ const zebraStripes = [
   { width: 7.31, color: null }
 ];
 
-var sortedRobots=robots.reduce(array, callback)
+var sortedRobots=robots.reduce(robots, callback)
