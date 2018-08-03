@@ -22,7 +22,7 @@ const zebraStripes = [
   { width: 7.31, color: null }
 ];
 
-const sortedRobots = map(robots, function (robots) {
+const sortedRobots = robots.map(robots, function (robots) {
 
 });
 console.log(sortedRobots);
