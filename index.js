@@ -21,8 +21,17 @@ const zebraStripes = [
   { width: 0.59, color: null },
   { width: 7.31, color: null }
 ];
+function map(collection, callback) {
+  const result = [];
 
-const sortedRobots = robots.map(robots, function (robots) {
+  for (let i = 0; i < collection.length; i++) {
+    const element = collection[i];
+    result.push(callback(element));
+  }
+
+  return result;
+}
+const sortedRobots = map(robots, function (robots) {
 
 });
 console.log(sortedRobots);
